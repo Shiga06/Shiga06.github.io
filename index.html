@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Libre Franklin", serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
             margin: 0;
             padding: 0;
             background-image: url("https://pbs.twimg.com/media/D3F_-YeWAAE5Frg.jpg");
@@ -14,12 +20,21 @@
             background-attachment: fixed;
         }
 
-        header, footer {
+        header {
             text-align: center;
             padding: 10px;
-            background-color: #ffe4bc;
+            background-color: #fddcab;
         }
-
+        h1{
+            color: #df9f3e;
+            font-family: "Libre Franklin", serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+        footer{
+            text-align: center;
+        }
         main {
             display: flex;
             justify-content: space-between;
@@ -44,20 +59,27 @@
             margin: 10px 0 0;
             font-weight: bold;
         }
+        .color-band {
+            background-color: #ffefd7; 
+            width: 80%; /* Largeur de la bande */
+            margin: 20px auto; /* Centrage horizontal (automatique) et espace en haut/bas */
+            border-radius: 8px; /* Ajout d'angles arrondis (facultatif) */
+        }
     </style>
 </head>
 <body>
-    <!-- Texte en haut -->
     <header>
         <h1>Welcome!</h1>
         <p>Since you're a member of the anime club, you have access to this website where everybody can add anime they like!</p>
         <p>Just send me an email, and I will add it to the list:</p>
     </header>
 
-    <!-- Section des animes -->
+    <div class="color-band">
     <main>
-        <!-- Colonne 1 -->
         <div class="column">
+            <div class="anime-item">
+                <p>Anime</p>
+            </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sqGr3D29BtUlJn67S-UmEpC7TJ8g-08H4nsFFUL4EA65CmPv" alt="A.I.C.O">
                 <p>A.I.C.O</p>
@@ -67,11 +89,11 @@
                 <p>Another</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalbl9hCZjqg_27LeUQ3PET_7neVpCTlIa4A&s" alt="Assassination Classroom">
+                <img src="https://m.media-amazon.com/images/I/710PUtnb5pL._AC_UF894,1000_QL80_.jpg" alt="Assassination Classroom">
                 <p>Assassination Classroom</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKyIXWvT3eWWzewePJj6q85xJpC0PHMEE9GNKDwppqspdAL5Im" alt="Bee et Puppycat">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvzCj9StyNc5ZC49Vd-ntVEEj122UfPdYzag&s" alt="Bee et Puppycat">
                 <p>Bee et Puppycat</p>
             </div>
             <div class="anime-item">
@@ -81,6 +103,10 @@
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd6L_fK0j6nCIYof8TlSF8qvZD_mjdoIHbXSCxr0JcUn8aozSczU8Bqkh6XNb4fmQHjrg&usqp=CAU" alt="Black Butler">
                 <p>Black Butler</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://www.bdtheque.com/repupload/T/73145-couverture-bd-b-side-tome-1.jpg" alt="B-side">
+                <p>B-side</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd1OeB4mPwfwmOxYr2GnrAnp0VTRkdG3ba4G_XsZMYb3p4Og2O" alt="Bungo stray do">
@@ -107,6 +133,10 @@
                 <p>Delicious in dungeon</p>
             </div>
             <div class="anime-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkbpIO12dwbSCG42GaoRu3XCmebpaW4zGqHO6f_U6s2ENZhl5R" alt="Detectiv connan">
+                <p>Detective connan</p>
+            </div>
+            <div class="anime-item">
                 <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8zytwZGYYwpk4HOVGeQS2I5Sp6ZWk14_xuykr4JwtuDYmLVAw" alt="Escaflown vision">
                 <p>Escaflown vision</p>
             </div>
@@ -123,8 +153,8 @@
                 <p>GATE</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCK26gIi9KtPSYM-A_GXIRyeqjiRJGibrsf-aqNxG6NBqF-zCs" alt="Goodnith world">
-                <p>Goodnith world</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCK26gIi9KtPSYM-A_GXIRyeqjiRJGibrsf-aqNxG6NBqF-zCs" alt="Good night world">
+                <p>Good night world</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmzmjjssMoGOhqe7wYwMUJF7KIJXwOI9m1ig&s" alt="Gun Gun Online (GGO)">
@@ -152,11 +182,11 @@
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSllg3vxyfiNgdhtuf7ZCfBMzRF2j_I65CmMFO0jq0AgpVJ2hpD" alt="Made in abyss">
-                <p>Made in abyss</p>
+                <p>Made in Abyss</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK98eCfaU6Nt29waVsFIdsByjt4QjZtdpdaFU5PndUdZSwQPfZ" alt="Mononoke (2007)">
-                <p>Mononoke (2007)</p>
+                <p>Mo No No Ke (2007)</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-XtDCcZM8OxjWtnAI3Qy1mPAxyE8DRoVK1hvKKHGtOP8zc78" alt="Neo genisis evangelion">
@@ -167,7 +197,7 @@
                 <p>No game no life</p>
             </div>
             <div class="anime-item">
-                <img src="https://manganim.fr/cdn/shop/products/platinum-end-serie-complete-manga_1080x.png?v=1660760350"" alt="Platinium end">
+                <img src="https://fr.web.img6.acsta.net/c_310_420/pictures/21/08/02/11/23/3965735.jpg" alt="Platinium end">
                 <p>Platinium end</p>
             </div>
             <div class="anime-item">
@@ -175,16 +205,12 @@
                 <p>Saga of tanya the evil</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRohYYhBmUjdkNYOmiNZPquwuuCDvx-KQOTiXWsNq2p1bBzzW32" alt="Sond Euphonium">
-                <p>Sond Euphonium</p>
-            </div>
-            <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5kzBu8UuJsUcgC1_W4zviBipUo5kNU4gvgP_5nAsf-FdHgAY"" alt="Sword Art Online (SAO)">
-                <p>Sword Art Online (SAO)</p>
-            </div>
-            <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uZ2gdtTXxRX6eDCd0Pci6jtW6_11ps1FlDLJZsFru4UiP0ig" alt="Steven Univers">
                 <p>Steven Univers</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5kzBu8UuJsUcgC1_W4zviBipUo5kNU4gvgP_5nAsf-FdHgAY" alt="Sword Art Online (SAO)">
+                <p>Sword Art Online (SAO)</p>
             </div>
             <div class="anime-item">
                 <img src="https://m.media-amazon.com/images/M/MV5BMmU3NGQxMzQtMTkyYy00YThjLTljOTAtZGQ2YTY3OTg2OTE3XkEyXkFqcGc@._V1_.jpg" alt="The grim variation">
@@ -207,11 +233,7 @@
                 <p>To your eternity</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmk4NTUGO-mzpdMKcumvxmVrlLAjxTya88cSX1Q8ciXPY1kmQV" alt="Your lie in april">
-                <p>Your lie in april</p>
-            </div>
-            <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNSiIBaI5AOs7fg9t5d0lsAEkxXYPtoU-z2zFrZignCE1oqyz44N4Gs_3oF1wvGSfGfU&usqp=CAU" alt="Violette evergarden">
+                <img src="https://es.web.img3.acsta.net/c_310_420/pictures/18/01/31/16/42/4875178.jpg" alt="Violette evergarden">
                 <p>Violette evergarden</p>
             </div>
             <div class="anime-item">
@@ -228,9 +250,14 @@
             </div>
         </div>
 
-
-        <!-- Colonne 2 -->
         <div class="column">
+            <div class="anime-item">
+                <p>Japanese animated film</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://images.justwatch.com/poster/132779577/s718/a-letter-to-momo.jpg" alt="A lette to Momo">
+                <p>A letter to Momo</p>
+            </div>
             <div class="anime-item">
                 <img src="https://m.media-amazon.com/images/I/51HvOkQdQTL._AC_UF894,1000_QL80_.jpg" alt="Arriety">
                 <p>Arriety</p>
@@ -240,11 +267,15 @@
                 <p>A whisker away</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_VAUTkPojZtSPatW9zPKTMoJARjDNP4LlA&s" alt="Blame!">
-                <p>Blame!</p>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY-3cha9Olp2sMquvOqbYCAewKdMea7smIY2al_aeuh87e7X72" alt="Belle">
+                <p>Belle</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMTnUhXDAhGOtLMM1jSigSlKQKG9DYxKsikuHmVsXVPzU86Ta1689UGwB6VflycBwarU&usqp=CAU" alt="Black Butler: book of the atlantique">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2_EovJWKhQbJmLzHOX_YrADblm17sZpc8A&s" alt="Big fish & Begonia">
+                <p>Big fish & Begonia</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://play-lh.googleusercontent.com/7H7DzzaQks9cU_TULfCucvRlzQ15W63ljo6sj_OQJa0YT6ZuIZw2Et2BoDqEOKieNZo=w240-h480-rw" alt="Black Butler: book of the atlantique">
                 <p>Black Butler: book of the atlantique</p>
             </div>
             <div class="anime-item">
@@ -252,12 +283,44 @@
                 <p>Bubble</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMTnUhXDAhGOtLMM1jSigSlKQKG9DYxKsikuHmVsXVPzU86Ta1689UGwB6VflycBwarU&usqp=CAU" alt="Detective Conan">
-                <p>Detective Conan</p>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrVcNJvpcxwpwPZQEzprLpCuUqroYBim-lixG09bXBK-fkFaJ8" alt="Bungo stray dig dead apple">
+                <p>Bungo stray dog dead apple</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShkOlKaCSfIBIJttYAxvBcERU90X36dL98i4Qf5HtdmMhIkJvN" alt="Fairy Tail">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7cjh3rpLdH5aggygIHupfzTM-7bQhDefZQD7_q3t8orlre6UV" alt="Cencoroll concept">
+                <p>Cencoroll concept</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhjTFJ-t0dU87SwzjCwasdeg6XxNVdWIdRBDsFXh69l1APQZxa" alt="Cinderlla Boy">
+                <p>Cinderlla Boy</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSahTUbrBUrd1crk_VzS2wl7Bt_R-DILDKAQPtRjDq7bABiuuup" alt="Child of the Kamiari Month">
+                <p>Child of the Kamiari Month</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdC9aZtCZ2AzsvliMHOehatNutMwvTapi-yg&s" alt="Children of the sea">
+                <P>Children of the sea</P>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShmQK6T_JW4WziG9ujZlmIryO3he3MZt4VqA&s" alt="Colorful">
+                <p>Colorful</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://static.wikia.nocookie.net/voiceacting/images/6/69/Detective_Conan_The_Scarlet_Bullet.jpeg/revision/latest/scale-to-width-down/985?cb=20231123174112" alt="Detective Conan (Zero's tea time / Scarlette bullet)">
+                <p>Detective Conan "Zero's tea time / Scarlette bullet"</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSopHkdcLbyTNhCa1IyzGGrPZycz5CdUqq6aQ&s" alt="Drifting Home">
+                <p>Drifting Home</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf1w13vQWrZBb2MezuLoXJgiHFgb2YJW2xMQ&s" alt="Fairy Tail">
                 <p>Fairy Tail</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSnp7WotX_VffsX5JN9nGyPQEW5cim_hJQdg&s" alt="Flavor of Youth">
+                <p>Flavor of Youth</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzG9MzAdtWXMz0mPLtJ1g0nG1tXK6GCb2TZrKCNWhoM8d6sYGJ" alt="Forest piano">
@@ -268,117 +331,121 @@
                 <p>Grave of the Fireflies</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRIqeVeDbU2bQLsahH4MTUxZteRona5yyCVA&s" alt="Howl's moving castel">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-NyJTrajeKAwfy2dG9hvR4R2ad_Rlog0VxtIVIgKfF9PUZSUz" alt="Harmony">
+                <p>Harmony</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4GKYWX-J6m5QsQqTCz7Pn8ffib3a1c1-PfWKtff_7DTXreZay" alt="Hello World">
+                <p>Hello World</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVDuT0Vtqi-W67je_Xg7X6XFYCu9EhPD1s60qWdNNvFur3_IYERK2S1Ery2_EDiNboTCY&usqp=CAU" alt="Howl's moving castel">
                 <p>Howl's moving castel</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlrOf7jIXnNwYX0wMNNvhzrwbrK6UOmiTpUAFIBCWV-aTc63ID" alt="Sword Art Online">
-                <p>Sword Art Online</p>
-            </div>
-            <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cB7F_sJlAH7Cm-AJl-XxfbiHNkNdVlmNQCMhN1kljLy68UB9" alt="Tokyo Ghoul">
-                <p>Tokyo Ghoul</p>
-            </div>
-            <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPl1bOFKrtCk_bzBpAUN6cDtIptAsbxAv0V8Q9XKSDzYW7kWzF" alt="Violet Evergarden">
-                <p>Violet Evergarden</p>
-            </div>
-            <div class="anime-item">
-                <img src="" alt="(Hunter x Hunter: Red ghost and The last mission)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMTnUhXDAhGOtLMM1jSigSlKQKG9DYxKsikuHmVsXVPzU86Ta1689UGwB6VflycBwarU&usqp=CAU" alt="(Hunter x Hunter: Red ghost and The last mission)">
                 <p>Hunter x Hunter: "Red ghost" and "The last mission"</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Kiki's deliveri service">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvi53HdM_5eUNQ3kLtOioRD4BTJGGjJPXPpGiNpRBgEL7Bc70e" alt="Journey to Agarta">
+                <p>Journey to Agarta</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGEi-tk3j8gEtEcrKdJsm_ZmJ3TtfaX3iRnzOs8ZhScuaQH2E" alt="Kiki's deliveri service">
                 <p>Kiki's deliveri service</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Nausicaä">
+                <img src="https://fr.web.img6.acsta.net/c_310_420/pictures/20/09/15/11/05/3922382.jpg" alt="Made in Abyss: Dawn of the deep soul">
+                <p>Made in Abyss: Dawn of the deep soul</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2bUWQVNahYVeLs1JS4UFOzSlALSuTbkPslZHiE1i1akYD7wl1" alt="Nausicaä">
                 <p>Nausicaä</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Neo genisis evangelion">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHwooa-QpPtbdDvsy862Ns7xzdQfbP6xlkRYJKJQb7YWu2A8eg" alt="Neo genisis evangelion">
                 <p>Neo genisis evangelion</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Patema inverted">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_0iy4NGnrDHBXGtz_-S3rVEMe49AQmtmvWrg81WtjNATmoBK8" alt="Patema inverted">
                 <p>Patema inverted</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Pincess Mononoke">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZhr3v73UjyuQprt4lxSOv5n-7sxGtzRD2gFfEHD0FLTyMhhmq" alt="Pincess Mononoke">
                 <p>Pincess Mononoke</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Myori's forest">
-                <p>Myori's forest</p>
+                <img src="https://i.pinimg.com/564x/0e/2b/e2/0e2be2c2c816d0feb9e5a667b7beaa14.jpg" alt="Pom Poko">
+                <p>Pom Poko</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Pompoko">
-                <p>Pompoko</p>
+                <img src="https://antreducinema.fr/wp-content/uploads/2020/04/ponyo-sur-falaise-.jpg" alt="Ponyo on the cliff by the sea">
+                <p>Ponyo on the cliff by the sea</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Ponyo on the cliff">
-                <p>Ponyo on the cliff</p>
-            </div>
-            <div class="anime-item">
-                <img src="" alt="Porco roso">
+                <img src="https://m.media-amazon.com/images/I/51NoLDO3bCL._AC_UF894,1000_QL80_.jpg" alt="Porco roso">
                 <p>Porco roso</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Sing a bit of armony">
+                <img src="https://www.justwatch.com/images/poster/307424226/s332/sing-a-bit-of-harmony" alt="Sing a bit of armony">
                 <p>Sing a bit of armony</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Spirited away">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg" alt="Spirited away">
                 <p>Spirited away</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Steven Univers">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzOc0F03P5yE2mR8DknFGH9JPxTGkoq1WjA&s" alt="Steven Univers">
                 <p>Steven Univers</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Summer wars">
+                <img src="https://static.fnac-static.com/multimedia/Images/FD/Comete/167947/CCP_IMG_ORIGINAL/2230757.jpg" alt="Summer wars">
                 <p>Summer wars</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Suzume">
+                <img src="https://japoncinema.com/wp-content/uploads/2022/12/1670339563301_image.jpeg" alt="Suzume">
                 <p>Suzume</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="The boy and the beast">
+                <img src="https://fr.web.img6.acsta.net/pictures/21/12/01/16/45/1662892.jpg" alt="Sword Art Online">
+                <p>Sword Art Online</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsLmIXpmN9CsP9fbXnLHW5RVSznXCTrqv5QiivxrmB7fDrIGiYvQRsmqN-nk5yDS8jyBA&usqp=CAU" alt="The boy and the beast">
                 <p>The boy and the beast</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="The cat returns">
-                <p>The cat returns</p>
-            </div>
-            <div class="anime-item">
-                <img src="" alt="The castel in the sky">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd_bzUVuBBJdY2av1YlqgAvbSm7UKg-wZuSzYU_6We284Zde2l" alt="The castel in the sky">
                 <p>The castel in the sky</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Violette evergarden the movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVWurtOS2TR1Kxnmsqf5jl1zYXRcXUqhTqg&s" alt="The cat returns">
+                <p>The cat returns</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiusO4BAXIJ9u3VGo2zgB5edNmad_EANfn1OOygD_yniVgeF00xOCukqmaWR7s57a6iu4&usqp=CAU" alt="Violette evergarden the movie">
                 <p>Violette evergarden the movie</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Wolf Children">
-                <p>Wolf Children</p>
-            </div>
-            <div class="anime-item">
-                <img src="" alt="Wetherin with you">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwGWmVaphIijs67OfNn-lJPDYfZ9NzdnFYmtDcjW308bZO5dSz" alt="Wetherin with you">
                 <p>Wetherin with you</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="When Marnie was there">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4_3AajJBhE2tJ7MWbFRixzCaywoLd21CqC13rRCYc3B1EBqMSyOU5fc5qKxdE7KHGRE&usqp=CAU" alt="When Marnie was there">
                 <p>When Marnie was there</p>
             </div>
             <div class="anime-item">
-                <img src="" alt="Your name">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC4kjnXqfWZ9aY1PKpkgGDs8yS5uxCRfS7o6bJdxB3yjHcSnJj" alt="Wolf Children">
+                <p>Wolf Children</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXplFRUXs1V_4NhUq7HgyGuhDCZHVeZEncyA&s" alt="Your name">
                 <p>Your name</p>
             </div>
         </div>
     </main>
+    </div>
 
-    <!-- Texte en bas -->
     <footer>
         <p>Anime Club © 2024. All Rights Reserved.</p>
     </footer>

@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime List</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: "Libre Franklin", serif;
-            font-optical-sizing: auto;
-            font-weight: normal;
-            font-style: normal;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url("https://pbs.twimg.com/media/D3F_-YeWAAE5Frg.jpg");
@@ -20,21 +19,19 @@
             background-attachment: fixed;
         }
 
-        header {
+        h1{
+            color: #df9f3e;
+            font-family: "Raleway", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        header, footer {
             text-align: center;
             padding: 10px;
             background-color: #fddcab;
         }
-        h1{
-            color: #df9f3e;
-            font-family: "Libre Franklin", serif;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            font-style: normal;
-        }
-        footer{
-            text-align: center;
-        }
+
         main {
             display: flex;
             justify-content: space-between;
@@ -51,20 +48,22 @@
         }
 
         .anime-item img {
-            border-radius: 15px;
-            height: 250px !important;
+        height: 250px; 
+        border-radius: 8%;           
         }
 
         .anime-item p {
             margin: 10px 0 0;
             font-weight: bold;
         }
+
         .color-band {
             background-color: #ffefd7; 
-            width: 80%; /* Largeur de la bande */
-            margin: 20px auto; /* Centrage horizontal (automatique) et espace en haut/bas */
-            border-radius: 8px; /* Ajout d'angles arrondis (facultatif) */
+            width: 70%; 
+            margin: 20px auto; 
+            border-radius: 8px; 
         }
+
     </style>
 </head>
 <body>
@@ -77,9 +76,8 @@
     <div class="color-band">
     <main>
         <div class="column">
-            <div class="anime-item">
-                <p>Anime</p>
-            </div>
+        <div class="anime-item">
+            <u><p>Anime</p></u>
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sqGr3D29BtUlJn67S-UmEpC7TJ8g-08H4nsFFUL4EA65CmPv" alt="A.I.C.O">
                 <p>A.I.C.O</p>
@@ -177,8 +175,8 @@
                 <p>Lost song</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwzVxhTInaASTf7NF7NG5UpQqEectvPqABFs2anT5b8r8IuT4j" alt="Macabre Anthology">
-                <p>Macabre Anthology</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UjVuFAGQyMZYRa9T6uBlvRD2myVjd84sPz0uRAnhQlbLWme9" alt="Land of Lutrus">
+                <p>Land of Lutrus</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSllg3vxyfiNgdhtuf7ZCfBMzRF2j_I65CmMFO0jq0AgpVJ2hpD" alt="Made in abyss">
@@ -197,6 +195,10 @@
                 <p>No game no life</p>
             </div>
             <div class="anime-item">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Lo-AkQ3IoTwq48DrizPOQImnkGtQXYXF9jsPmPMvYrRSE9ok" alt="Pandora heart">
+                <p>Pandora Heart</p>
+            </div>
+            <div class="anime-item">
                 <img src="https://fr.web.img6.acsta.net/c_310_420/pictures/21/08/02/11/23/3965735.jpg" alt="Platinium end">
                 <p>Platinium end</p>
             </div>
@@ -205,8 +207,24 @@
                 <p>Saga of tanya the evil</p>
             </div>
             <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4uZ2gdtTXxRX6eDCd0Pci6jtW6_11ps1FlDLJZsFru4UiP0ig" alt="Steven Univers">
-                <p>Steven Univers</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzlacSqVrZbTPRiG7chtQnpRvJs_54KkyWYkrVxVwINlExpP1s" alt="Sailor Moon">
+                <p>Sailor Moon</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE3A_ZbaJlNxev-sm_d-_1dY90MVRM1LXzze7UwrbhRv22TI2q" alt="Servap">
+                <p>Servap</p> 
+            </div>  
+            <div class="anime item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8DPHdNzA4S_VVYkTQynGSwMCtux1CScAWhyXQgCb4kZFQxL1j" alt="Shana">
+                <p>Shana</p>
+            </div>
+            <div class="anime-item>">
+                <img src="https://i.ebayimg.com/images/g/PYUAAOSwl-FmrUjL/s-l1200.jpg" alt="Soul eater">
+                <p>Soul eater</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://m.media-amazon.com/images/I/81ou26769YL._AC_UF1000,1000_QL80_.jpg" alt="Spice and Wolf">
+                <p>Spice and Wolf</p>
             </div>
             <div class="anime-item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5kzBu8UuJsUcgC1_W4zviBipUo5kNU4gvgP_5nAsf-FdHgAY" alt="Sword Art Online (SAO)">
@@ -249,11 +267,11 @@
                 <p>Yu Yu akusho</p>
             </div>
         </div>
+        </div>
 
         <div class="column">
             <div class="anime-item">
-                <p>Japanese animated film</p>
-            </div>
+                <u><p>Japanese animated film</p></u>
             <div class="anime-item">
                 <img src="https://images.justwatch.com/poster/132779577/s718/a-letter-to-momo.jpg" alt="A lette to Momo">
                 <p>A letter to Momo</p>
@@ -384,8 +402,7 @@
             </div>
             <div class="anime-item">
                 <img src="https://m.media-amazon.com/images/I/51NoLDO3bCL._AC_UF894,1000_QL80_.jpg" alt="Porco roso">
-                <p>Porco roso</p>
-            </div>
+                <p>Porco roso</p>        
             <div class="anime-item">
                 <img src="https://www.justwatch.com/images/poster/307424226/s332/sing-a-bit-of-harmony" alt="Sing a bit of armony">
                 <p>Sing a bit of armony</p>
@@ -393,10 +410,6 @@
             <div class="anime-item">
                 <img src="https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg" alt="Spirited away">
                 <p>Spirited away</p>
-            </div>
-            <div class="anime-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzOc0F03P5yE2mR8DknFGH9JPxTGkoq1WjA&s" alt="Steven Univers">
-                <p>Steven Univers</p>
             </div>
             <div class="anime-item">
                 <img src="https://static.fnac-static.com/multimedia/Images/FD/Comete/167947/CCP_IMG_ORIGINAL/2230757.jpg" alt="Summer wars">
@@ -443,8 +456,7 @@
                 <p>Your name</p>
             </div>
         </div>
-    </main>
-    </div>
+    </main>    </div>
 
     <footer>
         <p>Anime Club © 2024. All Rights Reserved.</p>
